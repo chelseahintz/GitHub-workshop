@@ -1,0 +1,29 @@
+---
+title: "index"
+author: "Chelsea HIntz"
+date: "11/27/2018"
+output: html_document
+---
+
+### Testing out the Rmarkdown workspace
+
+My first R chunk
+```{r, echo=F}
+x <- 2+2
+x
+
+```
+
+Trying out plotting
+```{r, fig.width= 6, fig.height= 8}
+plot(cars$dist~cars$speed)
+```
+
+Trying out tables
+```{r}
+knitr::kable(cars)
+
+library(DT)
+datatable(mtcars)
+```
+
